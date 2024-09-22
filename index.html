@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>DOM Manipulation with Forms</title>
+</head>
+
+<body>
+    <h1 id="title">Form Submission with DOM Manipulation</h1>
+    <p id="description">
+        Below is form task
+    </p>
+    <form id="form">
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required placeholder="first name"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required placeholder="last name"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="www@g.com" required><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+          
+            <textarea type="text" id="address" required
+            
+            placeholder="Address here"
+            >
+               
+            </textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" required  placeholder="Pincode"><br>
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female" required> Female<br>
+        </div>
+        <div class="form-group">
+            <label>Choice of Food (Select at least 2):</label><br>
+            <input type="checkbox" name="food" value="Pizza"> Pizza
+            <input type="checkbox" name="food" value="Burger"> Burger
+            <input type="checkbox" name="food" value="Pasta"> Pasta
+            <input type="checkbox" name="food" value="Salad"> Salad
+            <input type="checkbox" name="food" value="Sushi"> Sushi<br>
+        </div>
+
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" required><br>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <input type="text" id="country" required><br>
+        </div>
+
+        <button type="submit" id="submit"  class="btn btn-primary">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <h2>Submitted Data</h2>
+    <table id="dataTable" border="1" class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dynamic rows will be added here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
